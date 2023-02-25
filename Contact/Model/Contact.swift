@@ -91,7 +91,7 @@ extension Contact {
         for i in 0 ..< count {
             let contact = Contact(context: context)
             contact.name = "item \(i)"
-            contact.email = "test_\(i)email.com"
+            contact.email = "test_\(i)@mail.com"
             contact.isFavourite = Bool.random()
             contact.phoneNumber = "0100000000\(i)"
             contact.dob = Calendar.current.date(byAdding : .day,

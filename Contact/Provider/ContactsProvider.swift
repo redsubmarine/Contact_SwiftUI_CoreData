@@ -23,7 +23,7 @@ final class ContactsProvider {
     
     private init() {
         persistentContainer = .init(name: "ContactsDataModel")
-        if EnvironmentValues.isPreview {
+        if EnvironmentValues.isPreview || Thread.current.isRunningXCTest {
             persistentContainer.persistentStoreDescriptions.first?.url = .init(filePath: "/dev/null")
         }
         viewContext.automaticallyMergesChangesFromParent = true
@@ -61,5 +61,18 @@ import SwiftUI
 extension EnvironmentValues {
     static var isPreview: Bool {
         ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
+    }
+}
+
+extension Thread {
+    var isRunningXCTest: Bool {
+        for key in threadDictionary.allKeys {
+            guard let keyString = key as? String else { continue }
+            
+            if keyString.split(separator: ".").contains("xctest") {
+                return true
+            }
+        }
+        return false
     }
 }

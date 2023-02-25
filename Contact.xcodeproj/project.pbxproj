@@ -11,6 +11,14 @@
 		9DAA769E29A8929E00DD05AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA769D29A8929E00DD05AB /* ContentView.swift */; };
 		9DAA76A029A8929F00DD05AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA769F29A8929F00DD05AB /* Assets.xcassets */; };
 		9DAA76A329A8929F00DD05AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA76A229A8929F00DD05AB /* Preview Assets.xcassets */; };
+		9DAA76AB29A8933400DD05AB /* ContactsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76A929A8933400DD05AB /* ContactsDataModel.xcdatamodeld */; };
+		9DAA76AD29A89B9700DD05AB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76AC29A89B9700DD05AB /* Contact.swift */; };
+		9DAA76B129A89D0700DD05AB /* ContactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76B029A89D0700DD05AB /* ContactsProvider.swift */; };
+		9DAA76B329A89FDE00DD05AB /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76B229A89FDE00DD05AB /* ContactRowView.swift */; };
+		9DAA76B529A8A02F00DD05AB /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76B429A8A02F00DD05AB /* ContactDetailView.swift */; };
+		9DAA76B729A8A51000DD05AB /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76B629A8A51000DD05AB /* CreateContactView.swift */; };
+		9DAA76BA29A90B1A00DD05AB /* EditContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76B929A90B1A00DD05AB /* EditContactViewModel.swift */; };
+		9DAA76BC29A9DA3F00DD05AB /* NoContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA76BB29A9DA3F00DD05AB /* NoContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		9DAA769D29A8929E00DD05AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DAA769F29A8929F00DD05AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DAA76A229A8929F00DD05AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DAA76AA29A8933400DD05AB /* ContactsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		9DAA76AC29A89B9700DD05AB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		9DAA76B029A89D0700DD05AB /* ContactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProvider.swift; sourceTree = "<group>"; };
+		9DAA76B229A89FDE00DD05AB /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		9DAA76B429A8A02F00DD05AB /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		9DAA76B629A8A51000DD05AB /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
+		9DAA76B929A90B1A00DD05AB /* EditContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewModel.swift; sourceTree = "<group>"; };
+		9DAA76BB29A9DA3F00DD05AB /* NoContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,15 @@
 		9DAA769A29A8929E00DD05AB /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				9DAA76B829A90B0500DD05AB /* Create */,
+				9DAA76AF29A89CFA00DD05AB /* Provider */,
+				9DAA76AE29A89BCA00DD05AB /* Model */,
 				9DAA769B29A8929E00DD05AB /* ContactApp.swift */,
 				9DAA769D29A8929E00DD05AB /* ContentView.swift */,
+				9DAA76BB29A9DA3F00DD05AB /* NoContactsView.swift */,
+				9DAA76B429A8A02F00DD05AB /* ContactDetailView.swift */,
+				9DAA76B229A89FDE00DD05AB /* ContactRowView.swift */,
+				9DAA76A929A8933400DD05AB /* ContactsDataModel.xcdatamodeld */,
 				9DAA769F29A8929F00DD05AB /* Assets.xcassets */,
 				9DAA76A129A8929F00DD05AB /* Preview Content */,
 			);
@@ -65,6 +88,31 @@
 				9DAA76A229A8929F00DD05AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DAA76AE29A89BCA00DD05AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA76AC29A89B9700DD05AB /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DAA76AF29A89CFA00DD05AB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA76B029A89D0700DD05AB /* ContactsProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9DAA76B829A90B0500DD05AB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				9DAA76B629A8A51000DD05AB /* CreateContactView.swift */,
+				9DAA76B929A90B1A00DD05AB /* EditContactViewModel.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAA76AD29A89B9700DD05AB /* Contact.swift in Sources */,
+				9DAA76B129A89D0700DD05AB /* ContactsProvider.swift in Sources */,
+				9DAA76B529A8A02F00DD05AB /* ContactDetailView.swift in Sources */,
+				9DAA76BA29A90B1A00DD05AB /* EditContactViewModel.swift in Sources */,
+				9DAA76AB29A8933400DD05AB /* ContactsDataModel.xcdatamodeld in Sources */,
 				9DAA769E29A8929E00DD05AB /* ContentView.swift in Sources */,
+				9DAA76B729A8A51000DD05AB /* CreateContactView.swift in Sources */,
+				9DAA76B329A89FDE00DD05AB /* ContactRowView.swift in Sources */,
+				9DAA76BC29A9DA3F00DD05AB /* NoContactsView.swift in Sources */,
 				9DAA769C29A8929E00DD05AB /* ContactApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +397,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DAA76A929A8933400DD05AB /* ContactsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DAA76AA29A8933400DD05AB /* ContactsDataModel.xcdatamodel */,
+			);
+			currentVersion = 9DAA76AA29A8933400DD05AB /* ContactsDataModel.xcdatamodel */;
+			path = ContactsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DAA769029A8929E00DD05AB /* Project object */;
 }
